@@ -70,10 +70,10 @@ spec:
     
     # For S3:
     druid.storage.type=s3
-    druid.storage.bucket=amir-naik-balfour-poc
+    druid.storage.bucket=<your buket name>
     druid.storage.baseKey=druid/segments
-    druid.s3.accessKey=AKIAS4ERICWGEA5X74FW
-    druid.s3.secretKey=lWC5tR+gfywZsgDYPthYWlQnJn+IQLNf+3Nf8AkC
+    druid.s3.accessKey=*****
+    druid.s3.secretKey=*****
 
     #
     # Extensions
@@ -91,7 +91,7 @@ spec:
     
     # For S3:
     druid.indexer.logs.type=s3
-    druid.indexer.logs.s3Bucket=amir-naik-balfour-poc
+    druid.indexer.logs.s3Bucket=<your buket name>
     druid.indexer.logs.s3Prefix=druid/indexing-logs
     
     #
