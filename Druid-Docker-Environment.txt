@@ -51,17 +51,17 @@ druid_indexer_fork_property_druid_processing_buffer_sizeBytes=256MiB
 
 # For S3:
 druid_storage_type=s3
-druid_storage_bucket=amir-naik-balfour-poc
+druid_storage_bucket=<your buket name>
 druid_storage_storageDirectory=druid/segments
-druid_s3_accessKey=AKIAS4ERICWGEA5X74FW
-druid_s3_secretKey=lWC5tR+gfywZsgDYPthYWlQnJn+IQLNf+3Nf8AkC
+druid_s3_accessKey=****************
+druid_s3_secretKey=****************
 
 # druid_indexer_logs_type=file
 # druid_indexer_logs_directory=/opt/shared/indexing-logs
 
 # For S3:
 druid_indexer_logs_type=s3
-druid_indexer_logs_s3Bucket=amir-naik-balfour-poc
+druid_indexer_logs_s3Bucket=<your buket name>
 druid_indexer_logs_s3Prefix=druid/indexing-logs
 
 druid_processing_numThreads=2
@@ -72,16 +72,16 @@ druid_processing_numMergeBuffers=2
 #
 druid_auth_authenticatorChain=["MyBasicMetadataAuthenticator"]
 druid_auth_authenticator_MyBasicMetadataAuthenticator_type=basic
-druid_auth_authenticator_MyBasicMetadataAuthenticator_initialAdminPassword=password1
-druid_auth_authenticator_MyBasicMetadataAuthenticator_initialInternalClientPassword=password2
+druid_auth_authenticator_MyBasicMetadataAuthenticator_initialAdminPassword=******
+druid_auth_authenticator_MyBasicMetadataAuthenticator_initialInternalClientPassword=************
 druid_auth_authenticator_MyBasicMetadataAuthenticator_credentialsValidator_type=metadata
 druid_auth_authenticator_MyBasicMetadataAuthenticator_skipOnFailure=false
 druid_auth_authenticator_MyBasicMetadataAuthenticator_authorizerName=MyBasicMetadataAuthorizer
 
 # Escalator
 druid_escalator_type=basic
-druid_escalator_internalClientUsername=druid_system
-druid_escalator_internalClientPassword=password2
+druid_escalator_internalClientUsername=***********
+druid_escalator_internalClientPassword=**************
 druid_escalator_authorizerName=MyBasicMetadataAuthorizer
 
 # Authorizer
